@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F04725; /* red */
+  margin: 0;
+  padding: 0;
+  color: #333333; /* dark grey */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff; /* white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #ffffff; /* white */
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Logo Styles */
+/* Logo Styles */
+/* Logo Styles */
+.logo {
+  flex: 1; /* Make the logo take up available space */
+  text-align: center; /* Center the logo horizontally */
+}
+
+.logo img {
+  height: 60px; /* Increase the height for a slightly bigger logo */
+  display: inline-block; /* Ensure the logo is inline and can be centered */
+}
+
+
+
+/* Home Styles */
+.home {
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Prediction Form Styles */
+.prediction-form {
+  background-color: #FFFFFF; /* white */
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-form input,
+.prediction-form select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #CCCCCC; /* light grey */
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.prediction-form input:focus,
+.prediction-form select:focus {
+  outline: none;
+  border-color: #222C4B; /* navy blue */
+  box-shadow: 0 0 5px rgba(34, 44, 75, 0.5);
+}
+
+.prediction-form .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.prediction-form button {
+  background-color: #222C4B; /* navy blue */
+  color: #FFFFFF; /* white */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #CCCCCC; /* light grey */
+  border-radius: 4px;
+}
+
+.prediction-form button:hover {
+  background-color: #0056b3; /* darker navy blue */
+}
+
+/* Prediction Result Styles */
+.prediction-result {
+  margin-top: 2rem;
+  background-color: #FFFFFF; /* white */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  padding: 1rem;
+  background-color: #222C4B; /* navy blue */
+  color: #FFFFFF; /* white */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.select-container,
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.autocomplete {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.suggestions div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestions div:hover {
+  background-color: #f0f0f0;
+}
+
+
